@@ -6,7 +6,7 @@ const  ListStories = ({stories}) => {
     <div className='list-stories'>
         {
             // imprimir la lista de historias utilizando el componente
-            // <ItemStory  />
+            stories.map(story=> <ItemStory story={story} key={story.id}/>)
         }
     </div>
   );

@@ -1,19 +1,33 @@
+import { comment } from 'postcss';
 import React, { useEffect, useState } from 'react';
 
 
+
 const  FormStory = ({saveStory}) => {
+  
+
+
+    
     const [form, setForm] = useState({
         comment: '',
-        photo: ''
+        photo: '',
+        
     })
 
     const clearForm = () => {
         setForm({
             comment: '',
-            photo: ''
+            photo: '',
+           
+            
         })
         // limpiar el input file
         // puedes utilizar cualquier metodo
+
+        // mi codigo >>
+        document.getElementById("inputphoto").value = "";
+        // << mi codigo 
+        
 
     }
 
@@ -38,9 +52,20 @@ const  FormStory = ({saveStory}) => {
 
     const submitForm = () => {
         // validar que al menos se ingrese el comentario
-        // 
+        //  
+        
+        
 
-        saveStory(form); 
+        if (form.comment === "" ) {
+            console.log("Ingrese un comentario");
+            alert("ingrese un comentario");
+            return 
+          }
+
+        //
+      
+
+       saveStory(form); 
         clearForm()
     }
 
@@ -53,7 +78,7 @@ const  FormStory = ({saveStory}) => {
                 </div>
                 <div className='flex'>
                     <div>
-                        <input type="file"  accept="image/*" name='photo'  onChange={handleFileInput} />
+                        <input id="inputphoto" type="file"  accept="image/*" name='photo'  onChange={handleFileInput} />
                     </div>
                     <button onClick={() => { submitForm() }} type='button' 
                         className="ml-auto w-96 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> 
