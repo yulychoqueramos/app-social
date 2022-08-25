@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yulychoqueramos/app-social.git/static/css/main.94875922.css",
+    "main.js": "/yulychoqueramos/app-social.git/static/js/main.5faa4002.js",
+    "static/js/787.c45b6682.chunk.js": "/yulychoqueramos/app-social.git/static/js/787.c45b6682.chunk.js",
+    "index.html": "/yulychoqueramos/app-social.git/index.html",
+    "static/media/index.cjs": "/yulychoqueramos/app-social.git/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.94875922.css.map": "/yulychoqueramos/app-social.git/static/css/main.94875922.css.map",
+    "main.5faa4002.js.map": "/yulychoqueramos/app-social.git/static/js/main.5faa4002.js.map",
+    "787.c45b6682.chunk.js.map": "/yulychoqueramos/app-social.git/static/js/787.c45b6682.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94875922.css",
+    "static/js/main.5faa4002.js"
+  ]
+}
